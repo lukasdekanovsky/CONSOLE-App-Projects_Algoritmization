@@ -1,3 +1,15 @@
 Secret auction
+------------------------------------------------
 
-This algorithm is collecting secret bids from individual competitors and proceeding the evaluation of the final winner.
+This Python script implements a secret auction program. 
+It begins by importing necessary modules and a graphic logo. The script defines two functions:
+
+# ask_for_bids(individual_competitor): This function prompts the user to input their name and bid. It then stores this information in a dictionary called individual_competitor and returns it.
+
+# evaluate_highest_bid(auction_competitors): This function iterates through the dictionary auction_competitors to find the highest bid and the corresponding winner. It then prints the winner's name and bid.
+
+The main() function initializes the auction by displaying the logo and a welcome message. 
+It sets up an empty dictionary auction_competitors to store competitors and iteratively collects bids until there are no more bidders. 
+After collecting all bids, it calls evaluate_highest_bid() to determine the winner and prints the result.
+
+The script executes the main() function if the script is run directly.

@@ -1,6 +1,22 @@
 Caesar cipher
+------------------------------------------------------
 
-Using the "Original Caesar cipher.png" we can understand the basic concept of the encryption/decryption of the words
-Rotation of the middle disc with alphabet created a original cipher, which was retroactively readable only with the knowledge of the correct disk shift.
+This Python script implements a Caesar cipher, a simple encryption technique. 
+It provides functionality to both encrypt and decrypt text messages by shifting each letter of the alphabet by a certain number of positions. 
+Here's a breakdown of how it works:
 
-We can try to decrypt or encrypt words with the usage of the main.py code
+1) rotate_alphabet(alphabet, shift): This function generates a new alphabet by shifting the original alphabet by a specified amount. 
+It returns the modified alphabet.
+
+2) encrypt(text, shift, alphabet): This function takes a message, a shift value, and the alphabet. 
+It encrypts the message by replacing each letter with the letter that appears a certain number of positions ahead in the shifted alphabet.
+
+3) decrypt(text, shift, alphabet): Similar to the encrypt function, this function decrypts a message by replacing each letter with the letter that appears a certain number of positions ahead in the shifted alphabet.
+
+4) main(): This is the main function of the program. It initializes the alphabet and then prompts the user to choose between encoding or decoding a message. 
+It then takes the input message and shift value from the user, performs the chosen operation, and prints the result. 
+The user is given the option to continue or exit the program.
+
+The Caesar cipher operates on a fixed set of characters (in this case, the lowercase letters of the English alphabet plus space), and it shifts each character by the same amount, wrapping around from 'z' to 'a' if necessary. 
+The shift value determines how many positions each letter is shifted by. 
+This script provides a simple command-line interface for users to encrypt or decrypt messages using the Caesar cipher.

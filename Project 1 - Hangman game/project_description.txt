@@ -1,6 +1,22 @@
 Typical word guessing game called HANGMAN:
+--------------------------------------------------------------------------------------------------------------
 
-Using a word list in words.py we are trying to guess a word hiden by empty lines
-To be succesfull we need to guess the right word before the hangman drawing will be compelted (6 lives - 6 attempts)
+This code is a simple Python game where the player has to guess letters in a word. Here's a breakdown:
+
+1) It imports necessary modules: random, os, and specific components from custom modules graphic and words.
+2) Prints a logo using ASCII art stored in the graphic module.
+3) Selects a random word from a predefined list.
+4) Sets up a display list to track the guessed letters of the word (initially all letters are represented by underscores).
+5) Enters a loop where the player guesses letters until they either guess the word correctly or run out of lives.
+6) Inside the loop:
+        Prompts the player for a letter guess.
+        Checks if the guess is correct:
+            If correct, updates the display accordingly.
+            If incorrect, decrements the number of lives and prints a hangman stage.
+        Checks for game ending conditions:
+            If the word is completely guessed, the player wins.
+            If the player runs out of lives, the player loses, revealing the correct word.
+        Also, checks for duplicate guesses and informs the player if they've already tried that letter.
+7) Clears the console screen after each guess for a cleaner display.
 
 

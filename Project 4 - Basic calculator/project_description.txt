@@ -1,4 +1,38 @@
 Basic calculator
 
-This project is focused on creation of the basic calculator, using 4 main operations such as +, -, *, or /
-We can freely take up previous results and continue with additional operations or start the calculation from the beginning.
+This Python code defines a simple calculator program that performs basic arithmetic operations (addition, subtraction, multiplication, and division) on two numbers. Here's a breakdown of its components:
+
+1) Import Statements:
+
+    # from graphic import logo: Imports a logo from a module named graphic. The logo will likely be displayed at the beginning of the program.
+    # import os: Imports the os module, which provides a way to interact with the operating system, mainly used here for clearing the console screen.
+
+2) Mathematical Functions:
+
+    # sum(x, y), multiple(x, y), devide(x, y), minus(x, y): Functions to perform addition, multiplication, division, and subtraction respectively on two given numbers x and y.
+    # round_result(result, how_many_decimals): Takes a number (result) and rounds it to a specified number of decimal places (how_many_decimals).
+
+3) Main Calculation Functions:
+
+    # calculate(x, y, function, round_to): This function takes two numbers x and y, along with a function representing an arithmetic operation, and a parameter to specify rounding. It then calculates the result using the provided function and rounds it accordingly.
+    # print_result(result, x, y, operation_select): This function prints out the result of an operation in a formatted manner.
+
+4) Calculator Function (calculator()):
+
+    # This function collects user input for two numbers (x and y), selects an arithmetic operation, and asks the user how many decimals they want in the result. Then it calculates the result using the calculate() function.
+    # It allows the user to continue calculations with the previous result or start over with a new number.
+
+5) Main Function (main()):
+
+    # It displays the program's logo.
+    # It sets up a dictionary operators mapping arithmetic symbols to their respective functions.
+    # It runs a loop to continuously prompt the user for calculations until they choose to stop.
+    # Inside the loop, it calls the calculator() function and asks the user if they want to continue with the current number or start over.
+    # If the user chooses to continue, the previous result becomes the new starting number for calculations; otherwise, the loop resets with x set to zero.
+
+6) Execution:
+
+    The if __name__ == "__main__": block ensures that the main() function is executed only when the script is run directly, not when it's imported as a module.
+
+
+This script provides a basic interactive calculator functionality, allowing users to perform arithmetic operations and control the precision of the results.
