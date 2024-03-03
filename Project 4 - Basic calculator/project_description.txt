@@ -1,0 +1,4 @@
+Basic calculator
+
+This project is focused on creation of the basic calculator, using 4 main operations such as +, -, *, or /
+We can freely take up previous results and continue with additional operations or start the calculation from the beginning.

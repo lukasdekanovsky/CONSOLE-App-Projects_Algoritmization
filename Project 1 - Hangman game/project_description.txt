@@ -1,0 +1,6 @@
+Typical word guessing game called HANGMAN:
+
+Using a word list in words.py we are trying to guess a word hiden by empty lines
+To be succesfull we need to guess the right word before the hangman drawing will be compelted (6 lives - 6 attempts)
+
+

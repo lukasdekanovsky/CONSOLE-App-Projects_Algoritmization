@@ -1,0 +1,6 @@
+Caesar cipher
+
+Using the "Original Caesar cipher.png" we can understand the basic concept of the encryption/decryption of the words
+Rotation of the middle disc with alphabet created a original cipher, which was retroactively readable only with the knowledge of the correct disk shift.
+
+We can try to decrypt or encrypt words with the usage of the main.py code

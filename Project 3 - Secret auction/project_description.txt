@@ -1,0 +1,3 @@
+Secret auction
+
+This algorithm is collecting secret bids from individual competitors and proceeding the evaluation of the final winner.
