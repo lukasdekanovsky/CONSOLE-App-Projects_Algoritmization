@@ -1,0 +1,31 @@
+BlackJack Card game project
+------------------------------------------------------
+
+This code is a simple implementation of a text-based Blackjack game in Python. Let's break it down:
+
+1) Imports:
+
+    # random: This module is used for generating random numbers, which is essential for shuffling cards in the game.
+    # os: This module provides a way to interface with the underlying operating system, primarily used here to clear the screen between games.
+    # art: This is a custom module that contains ASCII art for the game's logo.
+
+2)Basic Functions:
+
+    # provide_sum(list_to_make_sum): Computes the sum of integers in a given list.
+    # initial_deal(number_of_cards, player_cards, computer_cards): Deals a specified number of cards to both the player and the computer (dealer).
+    # dealing_cards(): Simulates dealing a card from a predefined list of card values.
+    # initialize_game(): Initializes the game by printing the game's logo and dealing two cards each to the player and the computer.
+    # next_card(list_of_cards): Deals another card and appends it to the list of cards.
+
+3) Main Blackjack Logic:
+
+    # score_and_evaluate_game(player_count, computer_count, player_score, computer_score): Evaluates the scores and determines the winner based on specific conditions (e.g., blackjack, bust).
+    # continue_game(player_cards, computer_cards): Checks if the game can continue based on the players' current card totals. Also handles the logic for changing the value of an ace from 11 to 1 if needed.
+    # add_another_card(player_cards, computer_cards, game_finish): Asks the player if they want another card, then either adds another card to the player's hand or stops the game if the player decides to hold. It also manages the computer's actions according to the rules of blackjack.
+    # run_game(player_cards, computer_cards, player_score, computer_score): Controls the flow of the game, repeatedly asking the player if they want another card until the game ends. It also handles resetting the game for a new round.
+    # main(): Initializes the game, keeps track of scores, and loops the game until the player decides to quit.
+
+The game follows the basic rules of Blackjack, where the player tries to get a higher score than the dealer without going over 21. 
+The dealer follows a simple strategy of hitting until their score is 17 or higher. 
+Players can choose to hit (take another card) or stand (keep their current hand). 
+After each game, players have the option to play again or quit
