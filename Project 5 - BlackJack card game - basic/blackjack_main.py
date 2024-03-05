@@ -1,5 +1,5 @@
 import random
-from art import logo
+from graphic import logo
 import os
 
 #-------------------------------BASIC FUNCTIONS----------------------------------------------
