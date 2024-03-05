@@ -1,0 +1,11 @@
+The script is a Python implementation of a guessing game where players compare the number of followers between two randomly generated accounts. Here's how it works:
+
+1) The script imports necessary modules (data from game_data and logo, vs from graphic), defines functions, and initializes variables.
+2)  heck_correct_answer() function compares the follower counts of two accounts and returns False if the player's guess is correct.
+3)  generate_account() function randomly selects an account from the imported data.
+4)  format_account() function formats the account information (name, description, country) for display.
+5)  play_game() function is the main game logic. It includes a while loop that continues until the player chooses to exit. Inside the loop, it generates two random accounts, displays them, asks the player to guess which account has more followers, and checks the correctness of the answer. If the answer is correct, the score increases, and the loop continues. The player can choose to restart the game after each round.
+6)  The main() function initiates the game by calling play_game().
+7)  Finally, the script checks if it's being run as the main program and calls main() accordingly.
+
+Overall, the script provides an interactive guessing game experience where players can test their knowledge of social media followers and compete to achieve a high score.
