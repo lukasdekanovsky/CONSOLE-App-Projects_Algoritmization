@@ -1,0 +1,16 @@
+This Python script models a rudimentary coffee machine application with functionalities to select coffee types, insert coins for payment, manage resources, and track profits. 
+Let's break down the components:
+
+1) Global Variables: The profit variable keeps track of the total money earned by the machine.
+2) Refill Resources: The refill_resources function allows the machine operator to refill all resources (water, milk, coffee) back to their maximum capacity.
+3) See Machine Resources: The see_machine_resources function displays the current levels of resources (water, milk, coffee) and the total profit earned by the machine.
+4) Decrease Resources: The decrease_resources function subtracts the resources consumed for a specific coffee order from the machine's inventory after the order is served.
+5) Insert Coins: The insert_coins function prompts the user to insert coins of various denominations (quarters, dimes, nickels, pennies) and returns the total amount inserted.
+6) Check Money: The check_money function verifies if the amount inserted by the user is sufficient to cover the cost of the selected coffee. If the inserted money is enough, it updates the profit variable and returns the change.
+7) Check Resources: The check_resources function checks if the machine has enough resources to fulfill a particular coffee order. It compares the required ingredients for the selected coffee with the available resources.
+8) Run Coffee Machine: The run_coffee_machine function serves as the main driver for the coffee machine. It prompts the user to select a coffee type, handles various user inputs (such as turning off the machine, checking resources, inserting coins), and serves the coffee if all conditions are met.
+9) Main Function: The main function initializes the coffee machine with an initial set of resources and menu options. It runs the coffee machine program in a loop until the user chooses to turn off the machine.
+
+Overall, this code implements a basic coffee machine simulator with features such as selecting coffee types, managing resources, handling payments, and generating profits. 
+It demonstrates fundamental programming concepts like functions, loops, conditionals, and data structures (such as dictionaries). 
+This application could serve as a foundation for more complex coffee machine simulations or be extended with additional features like user authentication, multiple users, or remote monitoring capabilities.
